@@ -5,6 +5,20 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsMenager", "EventsMenager\EventsMenager.csproj", "{21596CB1-E0A2-4E35-A3AE-A149C7FC0374}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6797D41B-78F7-4930-9A0E-7C94DE174D60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C16FF233-2E41-4A0A-87A3-C25F60BB6CDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evento.Api", "src\Evento.Api\Evento.Api.csproj", "{40E43EF3-8965-4A9E-B34E-7F36BED1B569}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evento.Core", "src\Evento.Core\Evento.Core.csproj", "{ABF35332-AE0A-4B3F-A01F-474F4A5C1E92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evento.Infrastructure", "src\Evento.Infrastructure\Evento.Infrastructure.csproj", "{5BCC0089-C5DE-453C-AFAF-5B6E573957F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evento.Tests", "tests\Evento.Tests\Evento.Tests.csproj", "{DA569DDC-B70C-4326-AA43-20BA556D7F68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evento.Tests.EndToEnd", "tests\Evento.Tests.EndToEnd\Evento.Tests.EndToEnd.csproj", "{E513AB92-4047-44C1-BDAF-B8A7A77870F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +29,36 @@ Global
 		{21596CB1-E0A2-4E35-A3AE-A149C7FC0374}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21596CB1-E0A2-4E35-A3AE-A149C7FC0374}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21596CB1-E0A2-4E35-A3AE-A149C7FC0374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E43EF3-8965-4A9E-B34E-7F36BED1B569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E43EF3-8965-4A9E-B34E-7F36BED1B569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E43EF3-8965-4A9E-B34E-7F36BED1B569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E43EF3-8965-4A9E-B34E-7F36BED1B569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF35332-AE0A-4B3F-A01F-474F4A5C1E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF35332-AE0A-4B3F-A01F-474F4A5C1E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF35332-AE0A-4B3F-A01F-474F4A5C1E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF35332-AE0A-4B3F-A01F-474F4A5C1E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCC0089-C5DE-453C-AFAF-5B6E573957F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCC0089-C5DE-453C-AFAF-5B6E573957F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCC0089-C5DE-453C-AFAF-5B6E573957F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCC0089-C5DE-453C-AFAF-5B6E573957F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA569DDC-B70C-4326-AA43-20BA556D7F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA569DDC-B70C-4326-AA43-20BA556D7F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA569DDC-B70C-4326-AA43-20BA556D7F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA569DDC-B70C-4326-AA43-20BA556D7F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E513AB92-4047-44C1-BDAF-B8A7A77870F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E513AB92-4047-44C1-BDAF-B8A7A77870F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E513AB92-4047-44C1-BDAF-B8A7A77870F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E513AB92-4047-44C1-BDAF-B8A7A77870F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40E43EF3-8965-4A9E-B34E-7F36BED1B569} = {6797D41B-78F7-4930-9A0E-7C94DE174D60}
+		{ABF35332-AE0A-4B3F-A01F-474F4A5C1E92} = {6797D41B-78F7-4930-9A0E-7C94DE174D60}
+		{5BCC0089-C5DE-453C-AFAF-5B6E573957F7} = {6797D41B-78F7-4930-9A0E-7C94DE174D60}
+		{DA569DDC-B70C-4326-AA43-20BA556D7F68} = {C16FF233-2E41-4A0A-87A3-C25F60BB6CDF}
+		{E513AB92-4047-44C1-BDAF-B8A7A77870F5} = {C16FF233-2E41-4A0A-87A3-C25F60BB6CDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8F1829A-DA04-4EB7-A5D2-8F0A2FE5FDEE}
